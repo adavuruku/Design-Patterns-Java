@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package design.patterns;
+package singleton;
 
 /**
  *
  * @author SHERIFF
  */
-public class DesignPatterns {
-
-    /**
-     * @param args the command line arguments
-     */
+public class testEagerLoading {
     public static void main(String[] args) {
-        // TODO code application logic here
+        EagerLoading eager = EagerLoading.getInstance();
+        eager.incrementValue();
+        
+        EagerLoading eager2 = EagerLoading.getInstance();
+        eager2.incrementValue();
     }
-    
 }
